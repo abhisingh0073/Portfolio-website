@@ -424,6 +424,94 @@ a{
 
 
 
+@media (max-width: 420px){
+
+    .hero_img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .hero_title{
+    
+        font-size: 15px;  
+        
+    }
+
+    
+
+.hero_name{
+    font-size: var(--size-2xl);
+
+}
+.hero_subtitle{
+
+    font-size: var(--size-xl);
+}
+.hero_description{
+   
+    font-size: 0.9rem;
+    
+}
+
+.about{
+    margin: 0 1rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+.about_title{
+    font-size: var(--size-2xl);
+    color: var(--clr-dark);
+
+}
+.about_description{
+    text-align: center;
+    font-size: var(--size-xs);
+
+}
+
+
+.sproject_title{
+    margin: 1rem 0;
+    font-size: var(--size-xl);
+}
+
+.sproject_subtitle{
+    font-size: var(--size-xxs);
+   
+}
+
+.contact{
+    gap: 0.5rem;
+}
+
+.contact_title{
+    font-size: var(--size-xl);
+    color: var(--clr-slate800);
+
+ 
+}
+.contact_desc{
+    font-size: var(--size-xs);
+    color: var(--clr-slate600);
+    max-width: 60ch;
+}
+.contact_btn{
+    font-size: var(--size-xxs);
+}
+
+.project_button{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+} 
+
+    
+}
+
 
 
 
