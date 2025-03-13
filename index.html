@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="mobile_nav.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <article class="container">
+<header class="header">
+    <nav>
+        <p class="header_name">Abhishek kumar Singh</h2>
+    </nav>
+      <nav>
+        <ul class="header_menu">
+            <li>
+                <a class="header_link" href="#about">About</a>
+            </li>
+            <li>
+                <a class="header_link" href="#project">Project</a>
+            </li>
+            <li>
+                <a class="header_link" href="#contact">Contact</a>
+            </li>
+            <li class="header_line"></li>
+            <li>
+                <button class="header_sun" onclick="sunbtn()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                        <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                      </svg>
+                        
+                </button>
+            </li>
+            <li class="header_resume">
+                <a class="btn" href="./asset/fake.pdf">Resume</a>
+            </li>
+        </ul>
+        <button class="header_bar" onclick="barbtn()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+              </svg>
+    </nav>
+    
+</header>
+
+<!-- mobile navigation -->
+ <div class="mobile_nav">
+    <nav >
+        <ul class="mobile_nav_menu">
+            <li>
+                <a class="mobile_nav_link" href="#about">About</a>
+            </li>
+            <li>
+                <a class="mobile_nav_link" href="#project">Project</a>
+            </li>
+            <li>
+                <a class="mobile_nav_link" href="#contact">Contact</a>
+            </li>
+            <li class="mobile_nav_link-line"></li>
+            <li>
+                <button class="mobile_nav_sun" onclick="sunbtn()" >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                        <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                      </svg>
+                        
+                </button>
+            </li>
+            <li>
+                <a class="mobile_nav_btn btn" href="">Resume</a>
+            </li>
+            
+        </ul>
+    </nav>
+ </div>
+
+
+</article>
+
+<main class="container">
+    <section class="hero">
+        <img class="hero_img" src="./asset/profile.jpg" alt="Profile Picture">
+        <div class="hero_intro">
+            <h3 class="hero_title"><span class="type_write">Hello! I'm</span></h3>
+            <h1 class="hero_name">Abhishek Kumar Singh</h1>
+            <h2 class="hero_subtitle">B-Tech Student</h2>
+             <p class="hero_description">A passionate <a> cybersecurity learner, </a><a>creative frontend web developer</a> and <a >UI/UX lover,</a> focused on building beautiful, precise, and interactive websites. I combine security, design, and functionality to create smooth digital experiences that stand out and impress users.</p>
+            <div class="social">
+                <a  href="https://github.com/abhisingh0073" target="blank">
+                    <img loading="lazy" title="github" class="social_link" src="./asset/github.png" alt="" width="30px" height="30px">
+                </a>
+                   
+                <a href="https://www.linkedin.com/in/abhishek-kumar-singh-2a4820152/" target="_blank">
+                    <img loading="lazy" title="Linkedin" class="social_link" src="./asset/linkedin.png" alt="" width="30px" height="30px">
+                </a>
+                    
+                <a href="mailto:abhisheksingh69946@gmail.com">
+                      <img loading="lazy" title="gmail" class="social_link" src="./asset/email.png" alt="" width="30px" height="30px">
+                </a>
+                <a href="https://www.instagram.com/abhi.vers/" target="_top">
+                    <img src="./asset/instaimg.png" alt="instagram" title="instagram" class="social_link" width="30px" height="30px">
+                </a>
+                    
+                
+            </div>    
+        </div>
+        
+    </section>
+    <div class="about" id="about">
+        <h2 class="about_title">About</h2>
+        <p class="about_description">Hey there! I’m Abhishek — a CSE Cyber Security student in my 4th semester, at <strong >RUNGTA COLLEGE OF ENGINEERING & TECHNOLOGY</strong>. I start my day with open up my laptop, and spend my time building things that live on the web — all day, every day.</p>
+        <p class="about_description">people who know me say i'm obsessed, that's fair. i am very driven and love learning new things</p>
+        <p class="about_description">I recently built this website as my portfolio, and I’m thrilled to share my work with you. Thanks for stopping by!</p>
+        <hr class="about_hr">
+        <h3 class="about_subtitle">Technologies</h3>
+        <div class="about_ul1">
+              <ul class="about_ul">
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                 <li>JAVA</li>
+           
+        </ul>
+        <ul class="about_ul">
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>TailwindCSS</li>
+                <li>coming soon</li>
+        </ul>
+        </div>
+        
+    </div>
+    <section id="project" class="project">
+        <h2 class="project_title">Project</h2>
+
+        <div class="project_container">
+<!-- prject 1 -->
+            <h3 class="project_name">Project Name</h3>
+            <div class="project_image1">
+                <img loading="lazy" src="/asset/bubble_selector.png" alt="">
+            </div>
+        
+        <div class="project_desc project_content1">
+            <h3 class="project_subtitle">Bubble Selector</h3>
+            <p class="project_disc1">An interactive number-based bubble shooter game built with HTML, CSS, and JavaScript. </p>
+            
+        <p class="project_disc2"> The goal is to click on the bubbles matching the target number within a limited time frame, earning points with each correct hit. This project demonstrates my front-end development skills, including dynamic UI updates, responsive design, and engaging gameplay mechanics</p>
+        <div class="project_button">
+            <a class="btn project_btn" href="https://abhisingh0073.github.io/Bubble-Shooter/" target="_blank">View</a>
+            <a class="btng project_btn" href="https://github.com/abhisingh0073/Bubble-Shooter">Code</a>
+        </div>
+        
+        </div>
+        
+ <!-- prject 2 -->       
+        <h3 class="project_name">Project Name</h3>
+        <div class="project_image2">
+            <img loading="lazy" src="/asset/weather-forcast.png" alt="nature">
+        </div>
+        <div class="project_desc project_content2">
+            <h3 class="project_subtitle">Weather forecast</h3>
+            <p class="project_disc1">A real-time weather application built using HTML, CSS, JavaScript, and a weather API</p>
+        <p class="project_disc2">Users can search for any city to get live temperature, humidity, and weather conditions with illustrative icons. This project showcases my ability to integrate external APIs, handle asynchronous data, and design clean, responsive user interfaces.</p>
+        <div class="project_button">
+            <a class="btn project_btn" href="https://abhisingh0073.github.io/weather-forecast/" target="_blank">View</a>
+            <a class="btng project_btn" href="https://github.com/abhisingh0073/Bubble-Shooter.git" target="_blank">Code</a>
+        </div>
+        </div>
+
+ <!-- prject 3 -->
+        <h3 class="project_name">Project Name</h3>
+        <div class="project_image3">
+            <img loading="lazy" src="/asset/nature.png" alt="nature">
+        </div>
+        <div class="project_desc project_content3">
+            <h3 class="project_subtitle">Project 3</h3>
+            <p class="project_disc1">here the discription of the project which canl describe </p>
+        <p class="project_disc2">here the discription of the project which can describe</p>
+        <div class="project_button">
+            <a class="btn project_btn" href="#">View</a>
+            <a class="btng project_btn" href="#">Code</a>
+        </div>
+        </div>
+
+<!-- prject 4 -->        
+        <h3 class="project_name">Project Name</h3>
+        <div class="project_image4">
+            <img loading="lazy" src="/asset/nature.png" alt="nature" >
+        </div>
+        <div class="project_desc project_content4">
+            <h3 class="project_subtitle">Project 4</h3>
+            <p class="project_disc1">here the discription of the project which can describe </p>
+        <p class="project_disc2">here the discription of the project which can describe the permanent thing of the html hi my name is abhishek kumar singh this </p>
+        <div class="project_button">
+            <a class="btn project_btn" href="#" target="blank">View</a>
+            <a class="btng project_btn" href="#">Code</a>
+           </div>
+          </div>
+        </div> 
+    </section>
+
+
+<section class="sproject">
+        <h1 class="sproject_title">Small Projects</h1>
+        <div class="sproject_name">
+            <a class="sproject_subtitle" href="https://github.com/abhisingh0073/Bubble-Shooter">
+            Bubble Selector Game
+             </a>
+            <a class="sproject_subtitle" href="https://github.com/abhisingh0073/Bubble-Shooter.git">
+                Weather forecast by using weather API
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             <a class="sproject_subtitle" href="">
+                project 1
+             </a>
+             
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact container">
+        <h2 class="contact_title">Contact Me</h2>
+        <p class="contact_desc">Contact Me
+            Have a project or just want to connect? Let’s create something amazing together! Reach out, and I’ll get back to you soon. 😊</p>
+        <a class="contact_btn btn" href="mailto:abhisheksingh69946@gamil.com" target="blank">Reach me</a>
+    </section>
+    
+</main>
+
+    
+<!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new yped('.hero_title',{
+        String: ["Abhishek",'hello'],
+        typeSpeed:150,
+        baclSpeed:150,
+        loop:true
+    });
+</script> -->
+<script src="script.js"></script>    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

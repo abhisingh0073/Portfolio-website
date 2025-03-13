@@ -1,0 +1,177 @@
+/*xs */
+@media (min-width: 475px) {
+
+    .project_container{
+        display: grid;
+        grid-template-columns:1fr  1fr;
+        place-items: center;
+    }
+
+
+
+.project_disc1{
+    font-size: var(--size-xxs);
+    margin: 0.5em 0;
+}
+.project_disc2{
+    font-size: var(--size-xxs);
+    margin:0 1rem ;
+    margin-bottom: 0.5em ;
+    
+    
+}
+.project_btn{
+    font-size: var(--size-xxs);
+    
+    
+}
+
+.project_name{
+    display: none;
+}
+
+.project_desc{
+    margin-bottom: 0;
+}
+
+
+.project_container{
+    display: grid;
+    width: 98%;
+    margin: 0 auto;
+    grid-template-areas: 
+    'image1 content1'
+    'content2 image2'
+    'image3 content3'
+    'content4 image4';
+}
+
+.project_image1{
+    grid-area: image1;
+}
+.project_image2{
+    grid-area: image2;
+}
+.project_image3{
+    grid-area: image3;
+}
+.project_image4{
+    grid-area: image4;
+}
+
+.project_subtitel{
+    display: block;
+}
+
+.project_content1{
+    grid-area: content1;
+}
+.project_content2{
+    grid-area: content2;
+}
+.project_content3{
+    grid-area: content3;
+}
+.project_content4{
+    grid-area: content4;
+}
+
+
+ }
+
+
+
+
+
+
+
+  
+  /* sm */
+  @media (min-width: 640px) {
+
+    .project_name{
+        margin: 0;
+        display: none;
+    }
+
+ 
+
+    .project_subtitle{
+    
+        display: block;
+        font-size: var(--size-xl);
+    }
+
+    .project_disc1{
+        font-size: var(--size-xs);
+        margin: 0.5em 0;
+    }
+    .project_disc2{
+        font-size: var(--size-xs);
+        margin:0 1rem ;
+        margin-bottom: 0.5em ;
+        
+    }
+   
+
+    .project_desc{
+        margin-bottom: 2rem;
+    }
+
+    
+  
+  }
+
+
+  
+  /* md */
+  @media (min-width: 768px) {
+   
+
+}
+
+  
+  /* lg */
+ @media (min-width: 1024px) {
+    .project_btn{
+        margin-top: 1rem;
+        font-size: var(--size-sm);
+    }
+ 
+        
+    }
+    
+    
+  
+  /* xl */
+   @media (min-width: 1280px) {
+    .project_container{
+        width: 70rem;
+
+    }
+    .project_btn{
+        margin-top: 1rem;
+        font-size: var(--size-sm);
+    }
+
+    .project_disc1, .project_disc2{
+        font-size: var(--size-sm);
+    }
+
+    .project_title{
+        font-size: var(--size-3xl);
+    }
+    
+
+  
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+
+    .project_container{
+        /* width: 80%; */
+
+    }
+    
+  } 
