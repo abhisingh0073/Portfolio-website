@@ -445,7 +445,7 @@ a{
 }
 .hero_subtitle{
 
-    font-size: var(--size-xl);
+    font-size: var(--size-xs);
 }
 .hero_description{
    
